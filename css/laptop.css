@@ -15,6 +15,7 @@ body {
 
  /* aside left menu  */
  .menu-left {
+     order: 1;
      position: fixed;
      left: 2px;
      top: 76px;
@@ -63,6 +64,7 @@ body {
  }
  /* aside right menu  */
  .menu-right {
+     order: 2;
      z-index: 4;
      padding-left: 6px;
      top: 76px;
@@ -92,3 +94,7 @@ body {
  .follow >ul>li:hover {
      box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
  }
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
