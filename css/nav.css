@@ -1,0 +1,147 @@
+/*---------------
+ navigation link 
+ ---------------*/
+ nav {
+    top: 0px;
+    position: fixed;
+    width: calc(100% - 5px);
+    background-color: gray;
+    padding: 5px;
+    height: 58px;
+    z-index: 3;
+    
+}
+ nav ul {
+    display: flex;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+}
+nav >ul >li {
+   margin-right: 10px;
+   font-size: 1.5em;
+   padding: 4px;
+}
+nav>ul>li:hover {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+    border-radius: 10px;
+    height: fit-content;
+}
+nav img {
+    height: 45px;
+    padding: 0;
+    
+}
+/* search */
+nav ul li:hover .search-form {
+    animation: search 0.5s ease-in 1;
+    display: flex;
+    margin: 3px;
+    padding: 10px;
+    background-color: #FCF5E7;
+}
+.search-form {
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+    border-radius: 10px;
+}
+button[type=submit] {
+    border-radius: 0px 10px 10px 0px;
+}
+input[type=search] {
+    border-radius: 10px 0px 0px 10px;
+}
+input[type=search]:focus {
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+}
+input::placeholder {
+    color: greenyellow;
+    font-weight: 700;
+    font-size: 20px;
+}
+@media only screen and (max-width:668px) {
+   input[type=search]{
+       width: 100px;
+   }
+}
+/* ---------------------
+---------refresh --------
+-----------------------*/
+.fa-spin {
+    display: none;
+}
+nav ul li a:hover .fa-refresh.fa-spin {
+    display: inline-block;
+}
+nav ul li a:hover .fa-refresh {
+    display: none;
+}
+@keyframes search {
+    0% { top: 10px;
+    opacity: 0;}
+    100% {
+        top: 60px;
+        opacity: 1;
+    }
+    
+}
+/* share nav ber  */
+nav ul li .share {
+    display: none;
+    padding: 10px;
+    background-color:#FCF5E7;
+}
+nav ul li:hover .share {
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    animation: share 0.5s ease-in 1;
+}
+@keyframes share {
+    0% { top: 10px;
+        opacity: 0;
+    }
+    100% {
+            top: 60px;
+            opacity: 1;
+    }
+}
+.share li {
+    padding: 3px;
+}
+nav ul li .share li:hover .share-link {
+    display: block;
+    position: absolute;
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+    border-radius: 10px;
+}
+.share-link {
+    padding: 5px;
+    display: none;
+    background-color: #fcf5e7b2;
+}
+.share-link input[type=text]{
+    border-radius: 5px;
+    border-radius: 10px 0 10px 0;
+    height: 20px;
+    font-weight: 700;
+    animation: share-link 0.5s ease-in 1;
+}
+@keyframes share-link {
+    0% { top: 10px;
+        opacity: 0;
+    }
+    100% {
+            top: 60px;
+            opacity: 1;
+    }
+}
+@media only screen and (max-width:668px){
+    nav ul li .share {
+        position: absolute;
+    }
+}

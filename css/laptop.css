@@ -1,0 +1,94 @@
+@media only screen and (min-width:1024px) {
+    .mobile-btn {
+    display: none;
+}
+.mobile-btn2 {
+    display: none;
+}
+}
+body {
+    width: 100%;
+}
+
+
+ /*________- main body-__________  */
+
+ /* aside left menu  */
+ .menu-left {
+     position: fixed;
+     left: 2px;
+     top: 76px;
+     grid-area: left;
+     background-color: rgba(245, 222, 179, 0.308);
+     box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.452);
+     border-radius: 10px;
+     z-index: 4;
+ }
+ .menu-left ul {
+     padding-inline-end: 2.8em;
+     padding-inline-start: 20px;
+     list-style: none;
+ }
+.menu-left li{
+    display: flex;
+    padding: 3px;
+    margin: 3px;
+    align-items: center;
+}
+.menu-left a {
+    text-decoration: none;
+}
+.menu-left ul li:hover ,.menu-right ul li:hover {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+    border-radius: 10px;
+}
+.menu-left a:link {
+    color: aqua;
+}
+ /* scroll airticle  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ .scroll-airticle ,footer {
+     font-family: 'Poppins', sans-serif;
+     position: relative;
+     top: 65px;
+     left: 22%;
+     grid-area: airticle;
+     background-color: rgba(245, 222, 179, 0.308);
+     box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.452);
+     margin: 5px;
+     padding: 9px;
+     border-radius: 10px;
+     width: 53%;
+ }
+ /* aside right menu  */
+ .menu-right {
+     z-index: 4;
+     padding-left: 6px;
+     top: 76px;
+     right: 3px;
+     position: fixed;
+     grid-area: right;
+     background-color: rgba(245, 222, 179, 0.308);
+     box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.452);
+     border-radius: 10px;
+ }
+ .menu-right ul {
+     list-style: none;
+     padding-inline-end: 1.3em;
+     padding-inline-start: 2px;
+ }
+ .menu-right a {
+     text-decoration: none;
+     padding: 2px;
+ }
+ .follow ul{
+     display: flex;
+     align-items: center;
+ }
+ .follow li {
+     margin: 2px;
+ }
+ .follow >ul>li:hover {
+     box-shadow: 2px 2px 10px 2px rgba(0, 255, 255, 0.472);
+ }
